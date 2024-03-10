@@ -1,0 +1,32 @@
+{% extends "aplicacion/index.html" %}
+
+
+{% block titulo %}
+<h1 class="mb-5">Aca tenemos otras opciones!</h1>   
+{% endblock titulo %}
+
+
+{% block contenido %}
+<h2>Queres una lectura mas detallada? Aca tenemos todas las opciones de tiradas disponibles para vos.</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre de Servicio</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for c in serviciotarot %}    
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.descripcion }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock contenido %}
+    
+    
