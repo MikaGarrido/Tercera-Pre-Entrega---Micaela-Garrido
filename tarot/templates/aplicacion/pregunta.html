@@ -7,8 +7,27 @@
 
 
 {% block contenido %}
-<h2>Las tres cartas indican uno el pasado, otro el presente y por ultimo el futuro. Estas list@? Tene en mente esa pregunta.</h2>
+<h2>Aca podes encontrar varias respuestas de diferentes tiradas</h2>
     
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Pregunta</th>
+            <th>Respuesta</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for p in pregunta %}    
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.pregunta }}</td>
+            <td>{{ p.respuesta }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
 {% endblock contenido %}
     
     

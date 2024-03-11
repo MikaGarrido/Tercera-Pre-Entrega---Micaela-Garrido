@@ -7,8 +7,29 @@
 
 
 {% block contenido %}
-<h2>Aca podes ingresar tu nombre y tu fecha de nacimiento para que las cartas sepan mas de vos.</h2>
-    
+<h2>Aca está la lista de toda la gente que confía en el tarot de los gatos.</h2>
+   
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Fecha de nacimiento</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for c in cliente %}    
+        <tr>
+            <td>{{ c.id }}</td>
+            <td>{{ c.nombre }}</td>
+            <td>{{ c.email }}</td>
+            <td>{{ c.fecha_nacimiento }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+ 
 {% endblock contenido %}
     
     
