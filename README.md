@@ -1,4 +1,4 @@
-## Tercera pre entrega 
+##Tercera pre entrega
 Micaela Garrido
 Curso Python
 Comision 50215
@@ -27,12 +27,14 @@ Una vez dentro de la pagina, luego de realizar el runserver e ingresar a  http:/
 nos encontraremos con la pagina "El tarot de los michis".
 En el inicio nos encontramos con todo lo ingresado en index.html
 Las tres clases creadas en Models.py son ServicioTarot, Pregunta y Cliente.
-En cada una de las ventanas se puede ingresar a los datos de la base de datos. Tambien se creo los
+En cada una de las ventanas se puede ingresar a los datos de la base de datos.
+Tambien se creo los
 formularios de cada uno: servicioForm, preguntaForm y clienteForm.
 Para ingresar a cada uno es:
 http://127.0.0.1:8000/servicio_form/
 http://127.0.0.1:8000/pregunta_form/
 http://127.0.0.1:8000/cliente_form/
+
 Tambien se creo el formulario para buscar:
 http://127.0.0.1:8000/buscar_servicios/
 
